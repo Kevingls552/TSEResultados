@@ -3,6 +3,8 @@ function Consultar() {
     var _TIPOELECCION = $("#TIPOELECCION").val();
     var _DEP = $("#DEP").val();
     var _MUN = $("#MUN").val();
+
+    console.log(_DEP);
   
     $.post("https://ws2v.tse.org.gt/api/tse/resultados", {
       PROCESO: "201902",
@@ -47,5 +49,5 @@ console.log(data.data["0"].V1);
     );
   }
   $(document).ready(function(){
-      Consultar();
+    Consultar();
   }) 
