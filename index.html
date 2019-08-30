@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Elecciones2019</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="./img/icon.png" width="100" height="100"> TSE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Elecciones2019 <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="text-center">ELECCIONES 2019</h1>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">Segunda Vuelta Presidentes</label>
+                                <select class="custom-select" name="idnacional" id="TIPOELECCION" disabled >
+                                    <option value="1" selected >Presidente</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                    <label for="">Departamento</label>
+                                    <select class="custom-select" id="DEP">
+                                            <option selected="" value="0">Nivel Nacional</option>
+                                            <option value="1">GUATEMALA</option>
+                                            <option value="2">SACATEPEQUEZ</option>
+                                            <option value="3">CHIMALTENANGO</option>
+                                            <option value="4">EL PROGRESO</option>
+                                            <option value="5">ESCUINTLA</option>
+                                            <option value="6">SANTA ROSA</option>
+                                            <option value="7">SOLOLA</option>
+                                            <option value="8">TOTONICAPAN</option>
+                                            <option value="9">QUETZALTENANGO</option>
+                                            <option value="10">SUCHITEPEQUEZ</option>
+                                            <option value="11">RETALHULEU</option>
+                                            <option value="12">SAN MARCOS</option>
+                                            <option value="13">HUEHUETENANGO</option>
+                                            <option value="14">QUICHE</option>
+                                            <option value="15">BAJA VERAPAZ</option>
+                                            <option value="16">ALTA VERAPAZ</option>
+                                            <option value="17">PETEN</option>
+                                            <option value="18">IZABAL</option>
+                                            <option value="19">ZACAPA</option>
+                                            <option value="20">CHIQUIMULA</option>
+                                            <option value="21">JALAPA</option>
+                                            <option value="22">JUTIAPA</option>
+                                            <option value="23">GUATEMALTECOS EN ESTADOS UNIDOS</option>
+                                          </select>
+                                          
+                                          <button onclick="Consultar();" class="btn-success mt-4">Mostrar Resultados</button>
+                                          <img src="./img/elec1.jpg" width="400" height="200" alt="" class="mt-4" >
+                                </div>
+                                
+                                    </div>
+                        </form>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            
+                <div class="col-6">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- Jquery JS file -->
+ <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
+
+
+ <!-- Adicionar javascript Personalizado -->
+ <script type="text/javascript" src="./JS/main.js"></script>
+ 
+
+
+
+</body>
+
+
+
+</html>
